@@ -1,2 +1,2 @@
-# web3-crowdfunding
-crowdfunding token
+# Getting Started with Create React App + hardhat
+
