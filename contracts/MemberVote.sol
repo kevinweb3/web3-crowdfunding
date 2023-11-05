@@ -118,7 +118,7 @@ contract MembersVote {
     }
 
     //For ether returns of proposal investments
-    function receive() external payable {
+    function receives() external payable {
         availableFunds += msg.value;
     }
 

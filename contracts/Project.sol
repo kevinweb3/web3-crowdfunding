@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/utils/math/Math.sol";
+import "./SafeMath.sol";
 
 contract Project {
     using SafeMath for uint256;
@@ -47,7 +47,7 @@ contract Project {
         string memory projectDesc,
         uint fundRaisingDeadline,
         uint goalAmount
-    ) public {
+    ) {
         creator = projectStarter;
         title = projectTitle;
         description = projectDesc;
@@ -60,8 +60,8 @@ contract Project {
      */
     function contribute() external payable inState(State.Fundraising) {
         require(msg.sender != creator);
-        contributions[msg.sender] = contributions[msg.sender].tryAdd(msg.value);
-        currentBalance = currentBalance.tryAdd(msg.value);
+        contributions[msg.sender] = contributions[msg.sender].add(msg.value);
+        currentBalance = currentBalance.add(msg.value);
         emit FundingReceived(msg.sender, msg.value, currentBalance);
         checkIfFundingCompleteOrExpired();
     }
@@ -72,10 +72,10 @@ contract Project {
         if (currentBalance >= amountGoal) {
             state = State.Successful;
             payOut();
-        } else if (now > raiseBy) {
+        } else if (block.timestamp > raiseBy) {
             state = State.Expired;
         }
-        completeAt = now;
+        completeAt = block.timestamp;
     }
 
     /** @dev Function to give the received funds to project starter.
@@ -102,19 +102,19 @@ contract Project {
 
         uint amountToRefund = contributions[msg.sender];
         contributions[msg.sender] = 0;
+        address payable payaddress = payable(msg.sender);
 
-        if (!msg.sender.send(amountToRefund)) {
+        if (!payaddress.send(amountToRefund)) {
             contributions[msg.sender] = amountToRefund;
             return false;
         } else {
-            currentBalance = currentBalance.trySub(amountToRefund);
+            currentBalance = currentBalance.sub(amountToRefund);
         }
 
         return true;
     }
 
     /** @dev Function to get specific information about the project.
-     * @return Returns all the project's details
      */
     function getDetails()
         public

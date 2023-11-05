@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/utils/math/Math.sol";
+import "./SafeMath.sol";
 import "./Project.sol";
 
 contract CrowdFunding {
@@ -32,9 +32,9 @@ contract CrowdFunding {
         uint durationInDays,
         uint amountToRaise
     ) external {
-        uint raiseUntil = now.tryAdd(durationInDays.tryMul(1 days));
+        uint raiseUntil = block.timestamp.add(durationInDays.mul(1 days));
         Project newProject = new Project(
-            msg.sender,
+            payable(msg.sender),
             title,
             description,
             raiseUntil,
