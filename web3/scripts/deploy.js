@@ -25,35 +25,20 @@ async function main() {
 
   // 将合约地址和部署账户信息生成json文件传给前端frontend
   saveFrontendFiles(contractAddress, deployer);
-
-  // start project
-  await deployContract.startProject("Buy toys", "Buy toys", 1, 100);
-  const allprojects = await deployContract.returnAllProjects();
-
-  const artifact = artifacts.readArtifactSync("Project");
-  let project;
-  let details;
-  for (let i = 0; i < allprojects.length; i++) {
-    project = new ethers.Contract(allprojects[i], artifact.abi, deployer);
-    details = await project.getDetails();
-    console.log(details);
-  }
 }
 
 function saveFrontendFiles(contractAddress, deployerAccount) {
-  const contractsDir = __dirname + "/../src/constractfiles";
+  const contractsDir = __dirname + "/../../src/constractfiles";
 
   if (!fs.existsSync(contractsDir)) {
     fs.mkdirSync(contractsDir);
   }
 
   const CrowdFundingArtifact = artifacts.readArtifactSync("CrowdFunding");
-  const ProjectArtifact = artifacts.readArtifactSync("Project");
 
   const contractAddressDir = contractsDir + "/contractAddress.json";
   const deployerAccountDir = contractsDir + "/deployerAccount.json";
   const CrowdFundingContractDir = contractsDir + "/CrowdFunding.json";
-  const ProjectContractDir = contractsDir + "/Project.json";
 
   fs.writeFileSync(
     contractAddressDir,
@@ -68,10 +53,6 @@ function saveFrontendFiles(contractAddress, deployerAccount) {
   fs.writeFileSync(
     CrowdFundingContractDir,
     JSON.stringify(CrowdFundingArtifact, null, 2)
-  );
-  fs.writeFileSync(
-    ProjectContractDir,
-    JSON.stringify(ProjectArtifact, null, 2)
   );
 }
 
