@@ -10,7 +10,7 @@ const PRIVATE_KEY = process.env.REACT_APP_PRIVATE_KEY;
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.20",
-  defaultNetwork: "sepolia",
+  defaultNetwork: "goerli",
   networks: {
     hardhat: {
       // forking: {
@@ -18,7 +18,7 @@ module.exports = {
       // }
     },
     localhost: {
-      url: "http://127.0.0.1:7545",
+      url: "http://127.0.0.1:8545",
     },
     sepolia: {
       url:
@@ -28,8 +28,12 @@ module.exports = {
     },
     goerli: {
       url:
-        "https://goerli.infura.io/v3/" + process.env.REACT_APP_INFURA_API_KEY,
+        "https://eth-goerli.g.alchemy.com/v2/" +
+        process.env.REACT_APP_ALCHEMY_Goerli_API_KEY,
       accounts: [PRIVATE_KEY],
+      // url:
+      //   "https://goerli.infura.io/v3/" + process.env.REACT_APP_INFURA_API_KEY,
+      // accounts: [PRIVATE_KEY],
     },
     mainnet: {
       url:

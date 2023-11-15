@@ -3534,13 +3534,13 @@
   resolved "https://registry.npmmirror.com/@testing-library/user-event/-/user-event-14.5.1.tgz#27337d72046d5236b32fd977edee3f74c71d332f"
   integrity sha512-UCcUKrUYGj7ClomOo2SpNVvx4/fkd/2BbIHDCle8A0ax+P3bU7yJwDBDrS6ZwdTMARWTGODX1hEsCcO+7beJjg==
 
-"@thirdweb-dev/auth@4.1.4":
-  version "4.1.4"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/auth/-/auth-4.1.4.tgz#8a3d161cf9fdf35f91e365fdd2334d5cd73072cf"
-  integrity sha512-0Ha1Jt0ZueWPd/AP9nEwIFa0CrxhpQJnrAbYYe5lyo0rYEA0vRrh383ZYIfI+tY5meGLgLW8FrL13xoXqZuNiw==
+"@thirdweb-dev/auth@4.1.5":
+  version "4.1.5"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/auth/-/auth-4.1.5.tgz#9cd5c6957c7a56b8c0a07ed8931e8086110ed4b6"
+  integrity sha512-ApY2I98XgkAm5pzC8thBeHwPtLUfmijMY9EZzhm6cW5F6zDT8lzW46FXnILd57wjuuaPdJYwXWeB14x8lqVv4A==
   dependencies:
     "@fastify/cookie" "^9.1.0"
-    "@thirdweb-dev/wallets" "2.1.1"
+    "@thirdweb-dev/wallets" "2.1.2"
     cookie "^0.5.0"
     fastify-type-provider-zod "^1.1.9"
     uuid "^9.0.1"
@@ -3579,25 +3579,25 @@
   resolved "https://registry.npmmirror.com/@thirdweb-dev/generated-abis/-/generated-abis-0.0.1.tgz#0d788d6aff0ac08f11e9eeb9ae4c8321845272a8"
   integrity sha512-vO9/3lSLO8smyyH1QVeYravSTzFwV1nf1C/Im1NBDPdH8//YvcbhtETGGiNfHWpyCvSi0vRYwvf+/7FKdwpDGQ==
 
-"@thirdweb-dev/react-core@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/react-core/-/react-core-4.1.2.tgz#2dce8b8b722ba291b802e5f669c5add3ff8f4535"
-  integrity sha512-IrZqdCS2eHFBZbLHvu9mCQHU0gZHdiO3/WDATYboLxtKWZ5AofuIp70/92t4ybDoQq79lVhf0Z6rsmZZKxhzTQ==
+"@thirdweb-dev/react-core@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/react-core/-/react-core-4.1.3.tgz#c9cb1839c9d47c425d21f33ffb582b8abd93750e"
+  integrity sha512-au3qIU1RZIZZPg2falB0YLbdQN0bsBPtLWnYzMqVNsU3yjHamkFR3OxZwvUITYM4p+5HqfPGTIF5R0L2jWtcSg==
   dependencies:
     "@tanstack/react-query" "^4.33.0"
-    "@thirdweb-dev/auth" "4.1.4"
+    "@thirdweb-dev/auth" "4.1.5"
     "@thirdweb-dev/chains" "0.1.58"
     "@thirdweb-dev/generated-abis" "^0.0.1"
-    "@thirdweb-dev/sdk" "4.0.11"
-    "@thirdweb-dev/storage" "2.0.2"
-    "@thirdweb-dev/wallets" "2.1.1"
+    "@thirdweb-dev/sdk" "4.0.12"
+    "@thirdweb-dev/storage" "2.0.3"
+    "@thirdweb-dev/wallets" "2.1.2"
     mime "3.0.0"
     tiny-invariant "^1.2.0"
 
 "@thirdweb-dev/react@^4":
-  version "4.1.2"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/react/-/react-4.1.2.tgz#e4a1c923f11cad0dc37f1b22ea5b93fa3d7600b3"
-  integrity sha512-/hQ8oyzPXYwsJATH44B+zfZNTGQFMj8AJdK7HDeZv19HUxrAFn1ppv1YjDyvx8t5HyMpwYshmjOv56wZxxHNfg==
+  version "4.1.3"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/react/-/react-4.1.3.tgz#362e52aea9dc00fdaba9dd2fe53016187f5ce7a2"
+  integrity sha512-YEG8fieqBbxEv5zMNs91GB4uO0h/sGXYCvvUVdg8/qI38WlRWfvfOjLIzQCEsOxYfmco8blAgMoGduPmqiIHuQ==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
@@ -3612,8 +3612,8 @@
     "@react-icons/all-files" "^4.1.0"
     "@tanstack/react-query" "^4.33.0"
     "@thirdweb-dev/chains" "0.1.58"
-    "@thirdweb-dev/react-core" "4.1.2"
-    "@thirdweb-dev/wallets" "2.1.1"
+    "@thirdweb-dev/react-core" "4.1.3"
+    "@thirdweb-dev/wallets" "2.1.2"
     buffer "^6.0.3"
     copy-to-clipboard "^3.3.2"
     detect-browser "^5.3.0"
@@ -3621,15 +3621,15 @@
     qrcode "^1.5.3"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/sdk@4.0.11", "@thirdweb-dev/sdk@^4":
-  version "4.0.11"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/sdk/-/sdk-4.0.11.tgz#a69676ec01022c2a4381144c60106d4b9ccce19b"
-  integrity sha512-gdfKhE7cIIpO215b/bxP+htTi+d+8UzrpVWc9FGQZdfYw3i0TBNXqC3l239ULZch0Wxamm2/1k5Yf5OoMttjkQ==
+"@thirdweb-dev/sdk@4.0.12", "@thirdweb-dev/sdk@^4":
+  version "4.0.12"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/sdk/-/sdk-4.0.12.tgz#2d90d50c6d9a896fec9b8514bf291ea1643738de"
+  integrity sha512-CEbs5g00os4StwDW8uKEyzJcdDl5fxRhVjLAAizDjhjQ9j5Wf/Gl0lIbfORjQyE3Fu5sx7wAP3bmoN540d9t7w==
   dependencies:
     "@thirdweb-dev/chains" "0.1.58"
     "@thirdweb-dev/contracts-js" "1.3.16"
     "@thirdweb-dev/generated-abis" "0.0.1"
-    "@thirdweb-dev/storage" "2.0.2"
+    "@thirdweb-dev/storage" "2.0.3"
     abitype "^0.2.5"
     bn.js "^5.2.1"
     bs58 "^5.0.0"
@@ -3643,19 +3643,19 @@
     yaml "^2.3.1"
     zod "^3.22.3"
 
-"@thirdweb-dev/storage@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/storage/-/storage-2.0.2.tgz#813d2da87ff864ae97992e3f7d91fb1c384b7071"
-  integrity sha512-idi0fWy2G9M5kAr4RdfoFwKtIBMNe+h4oUXX/zyCi8CKQ4ruBPku1+3nA9Z7pXSUbEt7JpPIvIJGu063OnyPTg==
+"@thirdweb-dev/storage@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/storage/-/storage-2.0.3.tgz#491e5ab42170dbc8fa7acf8e75fbce20c087fda0"
+  integrity sha512-BRo/XSw3sfypcmtFi/to67DqVN1PIVqCzqyZ3rhXfHPPp7EDLXYUfU4bGsx4/3THTfI93p8dxu62wMlhci5PLw==
   dependencies:
     cid-tool "^3.0.0"
     form-data "^4.0.0"
     uuid "^9.0.1"
 
-"@thirdweb-dev/wallets@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.npmmirror.com/@thirdweb-dev/wallets/-/wallets-2.1.1.tgz#6e478c39b30ee15101d245a99ba3925fa7ae72bf"
-  integrity sha512-OAj1cHmldd2ZrzFt+05P0NQRvWs9p4XskaBOwfKw/Gs2gt7nP1IwaJa795gT7eCeaDyGnxWwBPUNP3KDqIKUKQ==
+"@thirdweb-dev/wallets@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.npmmirror.com/@thirdweb-dev/wallets/-/wallets-2.1.2.tgz#1d7e2787af400af1cac1e375e0a3e5b0f7fb160b"
+  integrity sha512-xLWkXfLX1OD3TPzq2Vl9QEPI59MgZFjUmJ1qybDu0xrIxmFeBMMVNy//h1sAV9Z+cE/cx2O2LyV5xpgeO3JqNA==
   dependencies:
     "@account-abstraction/contracts" "^0.5.0"
     "@account-abstraction/sdk" "^0.5.0"
@@ -3674,7 +3674,7 @@
     "@safe-global/safe-ethers-lib" "^1.9.4"
     "@thirdweb-dev/chains" "0.1.58"
     "@thirdweb-dev/contracts-js" "1.3.16"
-    "@thirdweb-dev/sdk" "4.0.11"
+    "@thirdweb-dev/sdk" "4.0.12"
     "@walletconnect/core" "^2.9.1"
     "@walletconnect/ethereum-provider" "^2.9.1"
     "@walletconnect/jsonrpc-utils" "^1.0.8"
@@ -5530,7 +5530,6 @@ browserify-aes@^1.2.0:
     safe-buffer "^5.0.1"
 
 browserify-zlib@latest, "zlib@npm:browserify-zlib":
-  name zlib
   version "0.2.0"
   resolved "https://registry.npmmirror.com/browserify-zlib/-/browserify-zlib-0.2.0.tgz#2869459d9aa3be245fe8fe2ca1f46e2e7f54d73f"
   integrity sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
@@ -6741,6 +6740,11 @@ dotenv@^10.0.0:
   resolved "https://registry.npmmirror.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
   integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
+dotenv@^16.3.1:
+  version "16.3.1"
+  resolved "https://registry.npmmirror.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
+
 duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npmmirror.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
@@ -6783,9 +6787,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.535:
-  version "1.4.582"
-  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.582.tgz#4908215182266793499ac57d80e2680d7dd9b3db"
-  integrity sha512-89o0MGoocwYbzqUUjc+VNpeOFSOK9nIdC5wY4N+PVUarUK0MtjyTjks75AZS2bW4Kl8MdewdFsWaH0jLy+JNoA==
+  version "1.4.583"
+  resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.583.tgz#7b0ac4f36388da4b5485788adb92cd7dd0abffc4"
+  integrity sha512-93y1gcONABZ7uqYe/JWDVQP/Pj/sQSunF0HVAPdlg/pfBnOyBMLlQUxWvkqcljJg1+W6cjvPuYD+r1Th9Tn8mA==
 
 elliptic@6.5.4, elliptic@^6.4.0, elliptic@^6.4.1, elliptic@^6.5.2, elliptic@^6.5.4:
   version "6.5.4"
@@ -13629,9 +13633,9 @@ unquote@~1.1.1:
   integrity sha512-vRCqFv6UhXpWxZPyGDh/F3ZpNv8/qo7w6iufLpQg9aKnQ71qM4B5KiI7Mia9COcjEhrO9LueHpMYjYzsWH3OIg==
 
 unstorage@^1.9.0:
-  version "1.10.0"
-  resolved "https://registry.npmmirror.com/unstorage/-/unstorage-1.10.0.tgz#6ac8e24d1d61c5373ae6a84b7059d6e89a868c64"
-  integrity sha512-azLoAeUMi1d1U823lR+eipFJjBydDAXFXoDAu6R9YCxQbkHzpoWaahqZUSkFFSfQSUZiWCqH3GmT3KuzffbcCQ==
+  version "1.10.1"
+  resolved "https://registry.npmmirror.com/unstorage/-/unstorage-1.10.1.tgz#bf8cc00a406e40a6293e893da9807057d95875b0"
+  integrity sha512-rWQvLRfZNBpF+x8D3/gda5nUCQL2PgXy2jNG4U7/Rc9BGEv9+CAJd0YyGCROUBKs9v49Hg8huw3aih5Bf5TAVw==
   dependencies:
     anymatch "^3.1.3"
     chokidar "^3.5.3"

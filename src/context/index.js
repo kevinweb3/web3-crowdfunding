@@ -13,7 +13,7 @@ import contractAddress from "../constractfiles/contractAddress.json";
 const StateContext = createContext();
 
 export const StateContextProvider = ({ children }) => {
-  const { contract } = useContract(contractAddress);
+  const { contract } = useContract(contractAddress.contractAddress);
   const { mutateAsync: createCampaign } = useContractWrite(
     contract,
     "createCampaign"
