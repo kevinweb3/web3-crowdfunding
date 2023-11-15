@@ -1,3 +1,5 @@
+# Web3 Crowdfunding (React APP + Hardhat + Ethers + thirdweb)
+
 # CRA JavaScript Starter
 
 Starter kit to build with Create React App and thirdweb without additional initial configuration.
